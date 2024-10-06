@@ -1,0 +1,64 @@
+$red: #fb3a3a;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.row {
+  display: flex; /* Use flexbox for row layout */
+  justify-content: space-between; /* Space between columns */
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.column {
+  flex: 1; /* Make all columns equal width */
+  min-width: 300px; /* Set a minimum width for smaller screens */
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  background-color: white; /* Optional: Add a background color */
+  padding: 10px 20px;
+}
+
+.title {
+  color: black;
+  text-align: center !important;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: $red;
+  text-align: center;
+  cursor: pointer;
+  width: 40%;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: darken($red, 10%);
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    flex: 1 0 100%;
+  }
+}

@@ -1,0 +1,111 @@
+<!-- <body>
+  <mat-card>
+    <b><span>Dashboard</span></b>
+  </mat-card>
+  <br />
+  <div class="row">
+    <div class="column">
+      <mat-card class="card">
+        <div class="container">
+          <h2 class="title">Total Category:</h2>
+          <h1 class="title">{{ data?.category }}</h1>
+          <p>
+            <button
+              mat-raised-button
+              color="primary"
+              [routerLink]="['/cafe/category']"
+            >
+              View Category
+            </button>
+          </p>
+        </div>
+      </mat-card>
+    </div>
+
+    <div class="column">
+      <mat-card class="card">
+        <div class="container">
+          <h2 class="title">Total Product:</h2>
+          <h1 class="title">{{ data?.product }}</h1>
+          <p>
+            <button
+              mat-raised-button
+              color="accent"
+              [routerLink]="['/cafe/product']"
+            >
+              View Product
+            </button>
+          </p>
+        </div>
+      </mat-card>
+    </div>
+
+    <div class="column">
+      <mat-card class="card">
+        <div class="container">
+          <h2 class="title">Total Bill:</h2>
+          <h1 class="title">{{ data?.bill }}</h1>
+          <p>
+            <button
+              mat-raised-button
+              color="warn"
+              [routerLink]="['/cafe/bill']"
+            >
+              View Bill
+            </button>
+          </p>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</body> -->
+<body>
+  <mat-card>
+    <b><span>Dashboard</span></b>
+  </mat-card>
+  <br />
+  <div class="row">
+    <div class="column">
+      <mat-card class="card">
+        <div class="container">
+          <h2 class="title">Total Category:</h2>
+          <h1 class="title">{{ data?.category }}</h1>
+          <p>
+            <button mat-raised-button color="primary" [routerLink]="['/cafe/category']" class="button">
+              View Category
+            </button>
+          </p>
+        </div>
+      </mat-card>
+    </div>
+    
+    <div class="column">
+      <mat-card class="card">
+        <div class="container">
+          <h2 class="title">Total Product:</h2>
+          <h1 class="title">{{ data?.product }}</h1>
+          <p>
+            <button mat-raised-button color="accent" [routerLink]="['/cafe/product']" class="button">
+              View Product
+            </button>
+          </p>
+        </div>
+      </mat-card>
+    </div>
+
+    <div class="column">
+      <mat-card class="card">
+        <div class="container">
+          <h2 class="title">Total Bill:</h2>
+          <h1 class="title">{{ data?.bill }}</h1>
+          <p>
+            <button mat-raised-button color="warn" [routerLink]="['/cafe/bill']" class="button">
+              View Bill
+            </button>
+          </p>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</body>
+
