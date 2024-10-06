@@ -1,0 +1,54 @@
+.signup-toolbar {
+  background-color: #fb3a3a; /* Title background color */
+  color: black; /* Title text color */
+}
+
+.title-center {
+  font-weight: bold; /* Optional: make the title bold */
+  font-size: 1.5rem; /* Increase font size for better visibility */
+  text-align: center; /* Center the title text */
+  flex: 1; /* Use flex to push title to the center */
+}
+
+mat-dialog-content {
+  background-color: #fb3a3a; /* Set the dialog background color */
+  color: white; /* Set text color to white for better contrast */
+  padding: 20px; /* Add padding for better spacing */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Add space between form fields */
+}
+
+mat-form-field {
+  width: 100%; /* Make all input fields full width */
+  background-color: white; /* Input background color */
+  border-radius: 5px; /* Rounded corners for input fields */
+}
+
+mat-dialog-actions {
+  display: flex;
+  justify-content: center; /* Center buttons */
+  gap: 10px; /* Space between buttons */
+}
+
+.custom-button {
+  background-color: #fb3a3a; /* Button background color */
+  color: white; /* Button text color */
+  margin: 0 5px; /* Optional: spacing between buttons */
+  border-radius: 5px; /* Rounded corners for buttons */
+  padding: 10px 20px; /* Add padding for a better button size */
+  font-size: 1rem; /* Increase font size */
+  transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.custom-button:hover {
+  background-color: #e02929; /* Darken on hover */
+}
+
+.custom-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #ff4081; /* Example focus color */
+}

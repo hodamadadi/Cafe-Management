@@ -1,0 +1,57 @@
+// رنگ سفارشی
+$red: #fb3a3a;
+
+.title-center {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+ 
+}
+.signup-toolbar{
+  background-color: $red;
+}
+
+mat-dialog-content {
+  padding: 20px; 
+}
+.custom-button {
+  background-color: #fb3a3a;
+  color: white;
+
+  &:hover {
+    background-color: darken($red, 10%); // تیره‌تر شدن رنگ در حالت hover
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(251, 58, 58, 0.5); // سایه در حالت focus
+  }
+}// Variables
+$red: #fb3a3a; // Your custom red color
+
+// Style for full width input fields
+mat-form-field {
+  width: 100%; // Make all input fields full width
+}
+
+// Custom button styles
+.custom-button {
+  background-color: $red; // Apply your custom red background color
+  color: white;
+
+  &:hover {
+    background-color: darken($red, 10%); // Darken on hover
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px $red; // Red focus color
+  }
+}
+
+
+// استایل سایر اجزای فرم
+mat-form-field {
+  margin-bottom: 20px; // فاصله بین فرم‌ها
+}
